@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
 import { createClient, groq } from 'next-sanity'
+import { PortableText } from '@portabletext/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -44,9 +45,8 @@ export default async function Home() {
               alt={b.alt}
                 width={400}
                 height={400}
-
               />
-              <p>{b.content.text}</p>
+              <PortableText value={b.content} />
             </div>
         ))}
       </div>
