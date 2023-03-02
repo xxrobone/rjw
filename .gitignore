@@ -16,7 +16,6 @@
 /build
 
 /sanity
-*sanity.config.ts
 
 # misc
 .DS_Store
