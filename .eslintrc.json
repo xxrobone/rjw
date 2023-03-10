@@ -2,13 +2,5 @@
   "extends": [
     "eslint:recommended",
     "next/core-web-vitals"
-  ],
-  "no-unused-vars": [
-    "error",
-    {
-        "ignoreRestSiblings": true,
-        "destructuredArrayIgnorePattern": "[A-Z]",
-        "caughtErrors": "none"
-    }
-]
+  ]
 }
