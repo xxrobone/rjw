@@ -1,0 +1,45 @@
+ .socials {
+    margin: 0 auto 0;
+    width: fit-content;
+    position: fixed;
+    z-index: 99;
+    top: 0.75rem;
+    left: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+          align-items: flex-start;
+    -ms-flex-pack: distribute;
+      justify-content: space-around;
+
+            
+  @media screen and (min-width: 768px) {
+    margin: 2rem auto 0;
+    padding: 0 0 0 2rem;
+    top: 40vh;
+    left: 0%;
+    flex-direction: column;
+  }
+
+ 
+  
+  a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.609);
+
+
+  @media screen and (min-width: 768px) {
+    padding: 2rem 1rem;
+    font-size: 1.4rem;
+  }
+  
+ &:hover {
+  color: #ffffff;
+  }
+  }
+
+  }

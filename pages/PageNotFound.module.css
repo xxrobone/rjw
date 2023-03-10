@@ -1,0 +1,10 @@
+.pagenotfound {
+    width: 100%;
+    height: 100vh;
+    background: red;
+    color: Black;
+}
+
+.pagenotfound > h1 {
+    font-size: 4rem;
+}

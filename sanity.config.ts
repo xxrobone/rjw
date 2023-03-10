@@ -1,6 +1,6 @@
 import { deskTool } from 'sanity/desk'
 
-const studioID = ''
+const studioID = process.env.SANITY_STUDIO_ID
 
 export const config = {
     projectId: `${studioID}`,
