@@ -1,0 +1,40 @@
+.card {
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    width: 100%;
+    min-height: 100px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #888;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: rgb(52, 185, 11);
+    }
+
+    .img {
+        margin: 0 2rem 0 0rem;
+        border: 2px solid black;
+        position: relative;
+        width: 112px;
+        height: 112px;
+        
+
+        img {
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+}
