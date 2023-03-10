@@ -2,6 +2,7 @@ import './globals.css';
 import Link from 'next/link';
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
+import Nav from './components/nav/Nav'
 
 
 export const metadata = {
@@ -11,13 +12,12 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
 }) {
   return (
     <html lang="en">
       <body>
         <Header />
+        <Nav />
         {children}
        
         <Footer>

@@ -30,6 +30,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "pages/404.jsx"
-  ],
+, "app/layout.jsx", "app/page.jsx"  ],
   "exclude": ["node_modules"]
 }
