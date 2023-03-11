@@ -10,17 +10,18 @@
     background-color: white;
     color: black;
     border-radius: 5px;
-    border: 1px solid lime;
+    border: 1px solid transparent;
     overflow: hidden;
     transition: all 0.6s ease-in-out;
 
     &:hover {
         cursor: pointer;
         background-color: #0e0e0e;
+        border: 1px solid lime;
     }
 
     h2 {
-        font-size: clamp(4rem, 5vw, 10rem);
+        font-size: clamp(4rem, 6vw, 10rem);
         color: rgb(52, 185, 11);
 
         &:hover {
