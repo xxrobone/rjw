@@ -330,9 +330,13 @@ transition-delay: 500ms, 0ms;
   
   @media (min-width: 1200px) {
   
-    .card_img {
-      top: 20%;
+    .card_header .card_img {
+    width: 80%;
+      top: 5%;
       left: 50%;
+      -webkit-transform: translate(-50%) scale(0.6);
+      -ms-transform: translate(-50%) scale(0.6);
+          transform: translate(-50%) scale(0.6);
     }
   
     .card_content p {
