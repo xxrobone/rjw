@@ -45,8 +45,8 @@ export const links = [
 
 export const socials = [
   {
-    title: 'twitter',
-    href: 'https://twitter.com/Rob2da1',
+    title: 'linkedin',
+    href: 'https://www.linkedin.com/in/robert-w%C3%A4gar-1b4661139/',
   },
   {
     title: 'github',
@@ -55,10 +55,6 @@ export const socials = [
   {
     title: 'codepen',
     href: 'https://codepen.io/robonexx',
-  },
-  {
-    title: 'linkedin',
-    href: 'https://www.linkedin.com/in/robert-w%C3%A4gar-1b4661139/',
   },
 ];
 
@@ -105,12 +101,21 @@ export const projects = [
     image: LL,
   },
 ];
+
 /* 
+
+maybe to use later
+
 export const meData = [
   {  
     name: 'Robert Wägar',
     avatar:
       'https://pbs.twimg.com/profile_images/1612739344682426369/cyzqToP3_400x400.jpg'
   }
+
+   {
+    title: 'twitter',
+    href: 'https://twitter.com/Rob2da1',
+  },
 
 ]; */

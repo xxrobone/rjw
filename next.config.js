@@ -5,7 +5,7 @@ const nextConfig = {
   },
 
   images: {
-    domains: ['pbs.twimg.com', 'github.com'],
+    domains: ['pbs.twimg.com'],
     remotePatterns: [
       {
         protocol: "https",
@@ -15,5 +15,7 @@ const nextConfig = {
     ],
   },
 };
+
+
 
 module.exports = nextConfig;
