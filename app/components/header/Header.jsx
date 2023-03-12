@@ -1,10 +1,8 @@
 'use client'
-import { useState, useEffect, useCallback } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { motion } from 'framer-motion'
 import Nav from '../nav/Nav'
-import NavItem from '../nav/NavItem'
 import { FiHome } from 'react-icons/fi'
 
 // styles
@@ -41,10 +39,13 @@ const variants = {
 
 
 export default function Header(props) {
-
   const [clicked, setClicked] = useState(false);
+  const [count, setCount] = useState(1)
 
-
+  const handleCount = () => {
+    setCount((currCount) => currCount + 1)
+    console.log('count : ' + count)
+}
   return (
     
     <header className={styles.header}>
@@ -57,13 +58,19 @@ export default function Header(props) {
             onDoubleClick={() => {
               setClicked((clicked) => !clicked);
             }}
+          onClick={() => {
+            handleCount()
+            if (count === 2) {
+              setClicked((clicked) => !clicked);                
+            } else {
+              return
+              }
+            }}
           >
             <FiHome />
           </motion.div>
       </Link>
-      <Nav>
-        
-        </Nav>
+      <Nav></Nav>
       {props.children}
       <motion.hr className={styles.border_bottom}
       initial={{width: '0%'}}

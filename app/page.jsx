@@ -16,7 +16,6 @@ const CallToAction = () => {
 
 export default async function Home() {
 
-
   return (
     <main className={styles.main}>
       <h2>Hi there,</h2>
