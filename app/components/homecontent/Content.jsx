@@ -6,8 +6,6 @@ import {motion} from 'framer-motion'
 // styles
 import styles from './Content.module.scss'
 
-const windowHeight = window.innerHeight;
-
 const Variants = {
   open: {
     marginTop: 0,
@@ -17,7 +15,7 @@ const Variants = {
     }
   },
   closed: {
-    marginTop: windowHeight,
+    marginTop: '100svh',
   }
 };
 
