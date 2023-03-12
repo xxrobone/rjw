@@ -1,13 +1,11 @@
 import styles from './about.module.scss'
-/* import IMG from '../../public/images/robertwagar.webp' */
-
 
 export default async function About() {
   
   return (
     <div>
       <div className={styles.about_hero}>
-
+    
       </div>
     <main className={styles.main}>     
 

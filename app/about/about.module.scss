@@ -1,27 +1,5 @@
-.nav {
-    margin: 12vh auto 0;
-    height: 6rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @media (min-width: 768px) {    
-        width: 40%;        
-      }
-
-    a {
-        text-decoration: none;
-        padding: 1rem 2rem;
-        color: magenta;
-        background-color: blue;
-
-        &:hover {
-            background-color: rgb(17, 7, 104);
-            color: lime;
-        }
-    }
-}
+// hittade inget bättre sätt för att ha
+// bild som bakgrund, använda IMG är ju optimalt
 
 .about_hero {
   margin: 0;
@@ -41,10 +19,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: var(--bg);
   background-image: url('../../public/images/robertwagar.webp');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: 100%;
   opacity: 1;
 
@@ -59,7 +36,7 @@
 
 .main {
     margin: 0 auto;
-    margin-top: 100vh;
+    margin-top: 70svh;
     padding: 3rem 0;
     min-height: 100vh;
     width: 90svw;
@@ -69,7 +46,8 @@
     justify-content: space-between;
     align-items: center;   
     
-    @media (min-width: 768px) {    
+    @media (min-width: 768px) {   
+        margin-top: 100vh; 
         padding: 6rem;
         width: 60svw;        
       }

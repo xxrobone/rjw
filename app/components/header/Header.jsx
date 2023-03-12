@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'; 
 import { motion } from 'framer-motion'
 import Nav from '../nav/Nav'
 import { FiHome } from 'react-icons/fi'
@@ -42,6 +43,8 @@ export default function Header(props) {
   const [clicked, setClicked] = useState(false);
   const [count, setCount] = useState(1)
 
+  const path = usePathname()
+
   const handleCount = () => {
     setCount((currCount) => currCount + 1)
     console.log('count : ' + count)
@@ -60,11 +63,16 @@ export default function Header(props) {
             }}
           onClick={() => {
             handleCount()
-            if (count === 2) {
-              setClicked((clicked) => !clicked);                
-            } else {
+            if (path === '/') {
               return
-              }
+            }
+            else {
+              if (count === 2) {
+                setClicked((clicked) => !clicked);                
+              } else {
+                return
+                }
+            }
             }}
           >
             <FiHome />

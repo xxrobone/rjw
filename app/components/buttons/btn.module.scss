@@ -1,0 +1,37 @@
+.enter_btn {
+    
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    position: relative;  
+    align-self: center;  
+    border: 0;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: background 200ms ease-out,
+   -webkit-transform 500ms ease-out;
+    transition: background 200ms ease-out,
+   -webkit-transform 500ms ease-out;
+    -o-transition: transform 500ms ease-out,
+   background 200ms ease-out;
+    transition: transform 500ms ease-out,
+   background 200ms ease-out;
+    transition: transform 500ms ease-out,
+   background 200ms ease-out,
+   -webkit-transform 500ms ease-out;
+   color: #f4f4f8;
+   background-color: transparent;
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
+}
+
+.enter_btn:hover,
+.enter_btn:focus {
+    outline: none;
+    background: rgb(189, 189, 189);
+    color: black;
+    background: #f4f4f8;
+    color: #ec4d37;
+    border-top: 1px solid #ec4d37;
+   border-bottom: 1px solid #ec4d37;
+}

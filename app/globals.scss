@@ -33,14 +33,12 @@ a {
 }
 
 h1 {
-  font-family: CaviarDreams;
-  font-size: clamp(2rem, 2vw, 2.5rem);
+  font-size: clamp(2rem, 5vw, 6rem);
   letter-spacing: 3px;
 }
 
 h2 {
   color: #ec4d37;
-  font-family: 'Roboto', sans-serif;
   font-size: clamp(1.5rem, 2vw, 2.5rem);
   font-weight: 400;
   letter-spacing: 2px;
@@ -49,9 +47,8 @@ h2 {
 p,
 h4 {
   margin: 0.5rem 0;
-  font-family: var(--font-primary-light);    
   font-size: clamp(1rem, 1.5vw, 1.5rem);
-  color: var(--color-primary);
+  color: #f4f4f8;
   font-weight: 200;
   letter-spacing: 2px;
   line-height: 1.5;
