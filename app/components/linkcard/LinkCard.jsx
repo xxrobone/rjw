@@ -11,7 +11,7 @@ export default function LinkCard({ href, title}) {
     <>
       <Link className={styles.card}
       href={href} target="_blank" rel="noreferrer">
-          <h2>{title}</h2>
+          <h2 className={styles.link_title}>{title}</h2>
       </Link>
     </>
     )

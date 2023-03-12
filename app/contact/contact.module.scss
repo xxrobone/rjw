@@ -1,4 +1,23 @@
-.main {
+// contact form
+.contact {
+  margin: 2rem auto;    
+  max-width: 800px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &>h2 {       
+      font-size: clamp(2rem, 4vw, 6rem);
+      color: #ffa900;
+      text-transform: uppercase;
+
+      &:last-child {
+          margin-bottom: 4rem;
+      }
+  }
+
+  &>.main {
     margin: 12vh auto 10vh;
     padding: 3rem 0;
     min-height: 100vh;
@@ -8,16 +27,161 @@
     @media (min-width: 768px) {    
         width: 60%;        
       }
+}
 
-      h2 {
-        font-size: clamp(2rem, 3vw, 4rem);
-        font-family: var(--font-mono);
-
-        .links {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-        }
-  }
 }
   
+/*   .contact_form {
+      margin: 4rem auto;
+      width: 80%;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      
+      &:valid input[type="submit"] {
+          color: #101010;
+          background-color: #ffa500;
+
+          &:hover {
+              transition: all 0.4s ease-in-out;
+              color: white;
+              background-color: #646c50;
+          }
+      }
+      &:invalid input[type="submit"] {
+          &:hover {
+              transition: all 0.4s ease-in-out;
+              color: black;
+              background-color: #e95749;
+          }
+      }
+      
+  
+      .input_field {
+          position: relative;
+          margin: 0.25rem auto 0.5rem;
+          width: 80%;
+
+          .check_icon {
+              position: absolute;
+              margin-left: 0.25rem;
+              opacity: 0;
+
+              &:last-child {
+                  top: 0;
+              }
+          }
+      }
+  
+      input,
+      textarea {
+          position: relative;
+          padding: 0.25rem 0.5rem;
+          color: white;
+          font-size: 0.8rem;
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid;
+          width: 100%;
+  
+          &[type="textarea"] {
+              height: 20vh;
+              border: 1px solid #888;
+          }    
+      }
+
+      input:focus,
+      textarea:focus {
+          outline: none;
+          border-bottom: 1px solid #ededed;
+      }
+
+      input[type="submit"] {
+          margin: 1rem auto 0;
+          padding: 1rem 2rem;
+          width: 40%;
+          color: #888;
+          background-color: transparent;
+          border: 1px solid #888;
+          cursor: pointer;
+      }
+  
+  label {
+      margin: 0.25rem auto 0.25rem;   
+      text-align: left;
+      color: #888;
+      width: 80%;
+  }
+      
+  input:invalid {
+      border-bottom-color: #5c5c5c;
+      ~.check_icon {
+          opacity: 0.3;
+      }
+  }
+
+  input:not([type='submit']):valid {
+      outline: none;
+      border-bottom-color: #ffa500;
+
+      ~.check_icon {
+          opacity: 1;
+      }
+      }
+
+      textarea:invalid {
+          border: 1px solid #88888880;
+          ~.check_icon {
+              opacity: 0.3;
+          }
+      }
+      textarea:valid {
+          border: 1px solid  #ffa500;
+
+          ~.check_icon {
+              opacity: 1;
+          }
+      }         
+
+  }
+}
+
+.contactPageModal {
+  margin: 0;
+  padding: 4rem;
+  width: 100%;
+  height: 100%;   
+  display: grid;
+  place-content: center;
+  background: linear-gradient(120deg, rgba(175, 70, 70, 0.486), rgba(73, 124, 73, 0.527), rgba(114, 114, 199, 0.397));
+  clip-path: polygon(0% 0%, 100% 0, 100% 80%, 70% 80%, 75% 100%, 50% 80%, 0 80%);
+
+
+  &>h2 {
+      font-weight: 800;
+      color: rgb(0, 0, 0);
+      text-shadow: 
+  1px 0px 1px #ccc, 0px 1px 1px #eee, 
+  2px 1px 1px #ccc, 1px 2px 1px #eee,
+  3px 2px 1px #ccc, 2px 3px 1px #eee,
+  4px 3px 1px #ccc, 3px 4px 1px #eee,
+  5px 4px 1px #ccc, 4px 5px 1px #eee,
+  6px 5px 1px #ccc, 5px 6px 1px #eee,
+  7px 6px 1px #ccc;
+  }
+
+  p {
+      font-size: clamp(1.2rem, 2vw, 2rem);
+      color: #000000;
+      text-shadow: 
+  1px 0px 1px #ccc, 0px 1px 1px #eee, 
+  2px 1px 1px #ccc, 1px 2px 1px #eee,
+  3px 2px 1px #ccc, 2px 3px 1px #eee,
+  4px 3px 1px #ccc, 3px 4px 1px #eee,
+  5px 4px 1px #ccc, 4px 5px 1px #eee,
+  6px 5px 1px #ccc, 5px 6px 1px #eee,
+  7px 6px 1px #ccc;
+  }
+
+ */

@@ -1,0 +1,55 @@
+
+
+.modal {
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100     
+ }
+ 
+ .glass {
+   // glass effect
+   box-sizing: border-box;
+   
+   box-shadow: 0 0 10px rgba(0, 0, 0, .25), inset 0 0 2px 0px rgba(255, 255, 255, 0.13);
+   background: rgba(0, 0, 0, .0125);
+   overflow: hidden;
+   backdrop-filter: blur(13px);
+   -webkit-backdrop-filter: blur(3px);
+ }
+ 
+ .close_btn {
+  margin-top: 1rem;
+  
+   position: absolute;
+   top: auto;
+   bottom: 0;
+   z-index: 50;
+   outline: none;
+   border: none;
+   padding: 0.75rem 1.5rem;
+   color: #282828;
+   background-color: rgba(242, 242, 242, 0.872);
+   filter: drop-shadow(0 4px 3px rgba(0,0,0,0.55));
+   box-shadow: inset -2px 2px 2px rgba(0,0,0,0.4);   
+   transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+   margin: 0;   
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  text-transform: uppercase;
+  text-decoration: none;
+  
+
+   &:hover {    
+    color: rgb(238, 238, 238);
+   background-color: #000000;
+    cursor: pointer;
+   }
+   &:focus {
+    border: none;
+    box-shadow: 1px 1px black;
+    transform: scale(1);
+    filter: drop-shadow(1px 1px 1px rgba(127, 34, 34, 0.329));
+    cursor: pointer;
+   }
+   }

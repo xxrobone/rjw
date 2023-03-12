@@ -1,12 +1,8 @@
-# Nextjs ts and sanity
+# Nextjs and sanity
 
-Starting this project using Nextjs, Typescript and Sanity
+Starting this project using Nextjs and Sanity
+ 
+## changed my mind and using this as the assignment 5 frameworks project
 
-- create scheme (done)
-- get data on screen (done)
-- some better styling
-- useRouter to get a blog instead of rendering all to same screen
 
-- crete additional styling, design, 
-- create components 
-header, footer, nav, carousel, + more
+

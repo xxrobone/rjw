@@ -2,13 +2,11 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import IMG from '/public/images/ll_mockup.png'
 
 //styles 
 import styles from './ProjectCardItem.module.scss'
 
-const ProjectCardItem = () => {
-
+const ProjectCardItem = ({title, href, github, desc, tech, image}) => {
     const [isOpen, setIsOpen] = useState(false)
 
     const ReadMore = () => {
@@ -25,7 +23,7 @@ const ProjectCardItem = () => {
           >
                   <Image 
                       className={styles.card_img}
-                src={IMG}
+                src={image}
                   alt="title"
                   priority
                 width='100%'
@@ -35,9 +33,8 @@ const ProjectCardItem = () => {
                     height: 'auto',
       }}
               />                  
-        <h2 className={styles.card_title}>LockerLegends</h2>
-        <span className={styles.tech}>Tech: Nextjs, Wordpress, Sass, Jsx, Framer-motion, GraphQL, Siteground,
-            Vercel</span>
+              <h2 className={styles.card_title}>{title}</h2>
+              <span className={styles.tech}>Tech: {tech}</span>
               <button className={isOpen ? `${styles.card_more_info} ${styles.more_open}` : `${styles.card_more_info}`}
               onClick={ReadMore}
               >
@@ -51,14 +48,13 @@ const ProjectCardItem = () => {
     </div>
           <div className={isOpen ? `${styles.card_content} ${styles.open}` : `${styles.card_content}`}
           >
-              <p className={styles.card_body}>This website was re-made for Lockerlegends international, a website
-            owned
-            by an orignal soultrain dancer and locking pioneer James Higgins, aka &quot;Skeeter Rabbit&quot;
-            from Los Angeles, USA </p>
+              <p className={styles.card_body}>
+                  {desc}
+              </p>
         <div className={styles.links}>
-            <Link href="https://github.com/robonexx/lockerlegends2022" target="_blank"
+            <Link href={github} target="_blank"
                 rel="noopener">Github</Link>
-            <Link href="https://lockerlegends.org/" target="_blank" rel="noopener">Website</Link>
+            <Link href={href} target="_blank" rel="noopener">Website</Link>
         </div>
     </div>
 </div>

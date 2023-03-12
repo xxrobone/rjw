@@ -1,10 +1,7 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from './blog.module.scss'
 import { createClient, groq } from 'next-sanity'
 import { PortableText } from '@portabletext/react'
-
-const inter = Inter({ subsets: ['latin'] })
 
 const clientConfig = {
   projectId: process.env.SANITY_STUDIO_ID,
@@ -36,7 +33,7 @@ export default async function Blog () {
       
       <div className={styles.description}>     
         
-        {blogs.map((b) => (
+        {blogs.map((b: any) => (
          
             <div className={styles.blogpost} key={b._id}>
             <h2>{b.name}</h2>
