@@ -1,0 +1,67 @@
+
+.content_wrapper {   
+    padding-bottom: 20svh;
+    width: 100%;
+    min-height: 100svh;
+    z-index: 10;
+    color: black;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    h2 {
+        margin-bottom: 2rem;
+        font-size: clamp(2rem, 3vw, 4rem);
+    }
+
+    
+.section {
+    position: relative;
+    margin: 12vh auto 0;
+    padding: 2rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-repeat: no-repeat;
+  
+    h2:first-of-type {
+      color: rgb(32, 32, 32);
+      font-weight: 400;
+    }
+  }
+  
+  
+  
+  @media (min-width: 980px) {
+  .section {
+    height: fit-content;
+  }
+  
+  .section.top {
+    margin-bottom: 3rem;
+  }
+  }
+  
+  
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+                    only screen and (min--moz-device-pixel-ratio: 2),
+                    only screen and (-o-min-device-pixel-ratio: 2/1),
+                    only screen and (min-device-pixel-ratio: 2)
+  {  
+  
+   .section.top {
+    margin-top: 1rem;
+   }  
+  }
+}
+  
