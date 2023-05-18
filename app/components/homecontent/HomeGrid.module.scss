@@ -1,18 +1,21 @@
 
-.content_wrapper {   
-    padding-bottom: 20svh;
+.content_wrapper {        
     width: 100%;
-    min-height: 100svh;
+    height: 100svh;
     z-index: 10;
     color: black;
-    background-color: transparent;
+    background-color: #fafafa;
+    color: black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+
+
     h2 {
         margin-bottom: 2rem;
         font-size: clamp(2rem, 3vw, 4rem);
     }
-
+   
     
 .section {
     position: relative;
@@ -33,12 +36,37 @@
         -ms-flex-pack: center;
             justify-content: center;
     background-repeat: no-repeat;
+    overflow: hidden;
+    transform: translateY(100%);
+    animation: my-animation 50s linear infinite;
+  
   
     h2:first-of-type {
       color: rgb(32, 32, 32);
       font-weight: 400;
     }
+    
   }
+
+  .even {
+      transform: translateY(-50%);
+      animation: my-animation-2 120s linear infinite;
+
+      .even:hover {
+      animation-play-state: paused;
+      }
+  }
+
+  .article {
+    position: absolute;
+    z-index: 100;
+    left: 30%;
+    top: 40%;
+    width: 200px;
+    height: 400px;
+    pointer-events: none;
+  }
+
   
   
   
@@ -60,8 +88,33 @@
   {  
   
    .section.top {
-    margin-top: 1rem;
+    
    }  
   }
 }
   
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+  
+@keyframes my-animation-2 {
+  from {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  to {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}

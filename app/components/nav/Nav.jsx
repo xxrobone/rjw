@@ -27,10 +27,10 @@ export default function Nav() {
   }, [closeMobileMenu, pathname]); */
   
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${active ? styles.open : ''}`}>
     <ul className={`${styles.menu} ${active ? styles.open : ''}`}>
-    {navData.map(({ title, path, cls, id }, i) => (
-            <NavItem title={title} path={path} cls={cls} key={id} i={i} closeMobileMenu={closeMobileMenu}/>
+    {navData.map(({ title, path, cls, id, img }, i) => (
+      <NavItem title={title} path={path} cls={cls} key={id} i={i} img={img} closeMobileMenu={closeMobileMenu}/>
           ))}   
     </ul>
     <MenuBtn active={active} setActive={setActive}/>

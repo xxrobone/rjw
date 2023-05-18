@@ -8,6 +8,11 @@ import Week2 from 'public/images/week2.png'
 import Week3 from 'public/images/week3.png'
 import Week4 from 'public/images/week4.png'
 import Week5 from 'public/images/week5.png'
+import Link1Img from 'public/images/astroHome.png'
+import Link2Img from 'public/images/astroAbout.jpeg'
+import Link3Img from 'public/images/astroProjects.jpg'
+import Link4Img from 'public/images/astroRocket.jpg'
+import Link5Img from 'public/images/astroContact.jpg'
 
 
 export const navData = [
@@ -15,26 +20,31 @@ export const navData = [
     title: 'home',
     path: '/',
     id: 1,
+    img: Link1Img
   },
   {
     title: 'about',
     path: '/about',
     id: 2,
+    img: Link2Img
   },
   {
     title: 'projects',
     path: '/projects',
     id: 3,
+    img: Link3Img
   },
   {
     title: 'blog',
     path: '/blog',
     id: 4,
+    img: Link4Img
   },
   {
     title: 'contact',
     path: '/contact',
     id: 5,
+    img: Link5Img
   },
 ];
 
