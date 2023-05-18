@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'; 
 import { motion } from 'framer-motion'
@@ -48,7 +48,8 @@ export default function Header(props) {
   const handleCount = () => {
     setCount((currCount) => currCount + 1)
     console.log('count : ' + count)
-}
+  }
+
   return (
     
     <header className={styles.header}>

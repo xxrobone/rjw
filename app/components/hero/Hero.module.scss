@@ -1,58 +1,41 @@
-.hero {
-    position: fixed;
-    top: 12svh;
+.canvas {
+    position:absolute;
+    top: 0;
     left: 0;
-    z-index: -1;
     width: 100%;
-    height: 88vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-            color: var(--color-bg-accent);
-            background-color: var(--color-bg-dark);
-    overflow: hidden;
+    height: 100%;
+    display: block;
 }
 
-.intro_head {
-    margin: 2rem auto;
-    text-align: center;
-}
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    color: #fafafa;
+    font-size: 12rem;
+    pointer-events: none;
 
-.rob {
-    position: relative;
-    max-width: 60%;
-    height: auto;
-}
+    &>span {
+        position: absolute;
+        bottom: -3rem;
+        left: 3rem;
+        font-size: 10rem;
+        text-shadow: 2px 2px 1px black;
+        filter: drop-shadow(2px 2px #000), drop-shadow(-5px -5px #121212);
+        pointer-events: none;
 
+        &:nth-child(2) {
+            bottom: -8rem;
+            left: 4rem;
+        }
+    }
 
-.rob .eye {
-    cursor: pointer;
-}
-
-.rob > path {
-    stroke: black;
-    stroke-width: 1px;
-}
-
-
-.rob_png {
-    height: 60px;
-    width: 60px;
-    transition: all 0.4s ease;
-}
-
-@media (min-width: 768px) {
-    .rob {
-        max-width: 20%;
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        object-fit: cover;
+        object-position: center;
     }
 }
